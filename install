@@ -84,27 +84,27 @@ Exec=${DIRECTORY}/gui
 Icon=${DIRECTORY}/icons/logo.png
 Terminal=false
 Type=Application
-Categories=Utility;" > ~/.local/share/applications/pi-apps.desktop
+Categories=Utility;" > ~/.local/share/applications/pi-store.desktop
 
-if [ ! -f ~/Desktop/pi-apps.desktop ];then
+if [ ! -f ~/Desktop/pi-store.desktop ];then
   echo "Adding Desktop shortcut..."
 fi
-cp -f ~/.local/share/applications/pi-apps.desktop ~/Desktop/pi-apps.desktop
+cp -f ~/.local/share/applications/pi-store.desktop ~/Desktop/pi-store.desktop
 chmod +x ~/Desktop/pi-apps.desktop
 
-if [ ! -f ~/.local/share/applications/pi-apps-settings.desktop ];then
+if [ ! -f ~/.local/share/applications/pi-store-settings.desktop ];then
   echo "Creating Settings menu button..."
 fi
 echo "[Desktop Entry]
 Name=Pi Apps Settings
-Comment=Configure Pi-Apps or create an App
+Comment=Configure Pi-Store or create an App
 Exec=${DIRECTORY}/settings
 Icon=${DIRECTORY}/icons/logo.png
 Terminal=false
 Type=Application
-Categories=Settings;" > ~/.local/share/applications/pi-apps-settings.desktop
+Categories=Settings;" > ~/.local/share/applications/pi-store-settings.desktop
 
-if [ ! -f ~/.config/autostart/pi-apps-updater.desktop ];then
+if [ ! -f ~/.config/autostart/pi-store-updater.desktop ];then
   echo "Creating autostarted updater..."
 fi
 mkdir -p ~/.config/autostart
@@ -116,7 +116,7 @@ Terminal=false
 Type=Application
 X-GNOME-Autostart-enabled=true
 Hidden=false
-NoDisplay=false" > ~/.config/autostart/pi-apps-updater.desktop
+NoDisplay=false" > ~/.config/autostart/pi-store-updater.desktop
 
 mkdir -p "${DIRECTORY}/data" && cd "${DIRECTORY}/data" || error "Failed to make and enter ${DIRECTORY}/data directory!"
 mkdir -p installed-packages preload settings status update-status categories
@@ -183,9 +183,9 @@ fi
 #pi-apps terminal command
 if [ ! -f /usr/local/bin/pi-apps ] || ! cat /usr/local/bin/pi-apps | grep -q "${DIRECTORY}/gui";then
   echo "#!/bin/bash
-${DIRECTORY}/gui"' "$@"' | sudo tee /usr/local/bin/pi-apps >/dev/null
+${DIRECTORY}/gui"' "$@"' | sudo tee /usr/local/bin/pi-store >/dev/null
   sudo chmod +x /usr/local/bin/pi-apps
-  echo "You can now launch pi-apps from a terminal, just by running 'pi-apps'"
+  echo "You can now launch pi-store from a terminal, just by running 'pi-store'"
 fi
 
 if [ "$(ls "$DIRECTORY/data/settings" 2>/dev/null | wc -l)" -le 2 ];then
