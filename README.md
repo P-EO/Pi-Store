@@ -1,4 +1,4 @@
-![logo](https://github.com/Botspot/pi-apps/blob/master/icons/proglogo.png?raw=true)
+![logo](https://github.com/P-EO/pi-store/blob/master/icons/proglogo.png?raw=true)
 ## Raspberry Pi-Store for Open Source Projects
 
 Linux is harder to master than Windows. It's geared toward power users, and you will encounter problems if you follow tutorials.
