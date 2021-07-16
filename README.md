@@ -14,7 +14,7 @@ Introducing **Pi-Store**, basically a list of pre-made apps you can install with
 ## To install Pi-Store
 Compatible operating systems: **Raspberry Pi OS** and most other Debian-based ARM operating systems like Twister, Kali, and Ubuntu.
 ```
-wget -qO- https://raw.githubusercontent.com/Botspot/pi-apps/master/install | bash
+wget -qO- https://raw.githubusercontent.com/P-EO/pi-store/master/install | bash
 ```
 The install script ensures YAD is installed, creates two menu buttons, an auto-started updater, and a file (`/usr/local/bin/Pi-Store`) that allows Pi-Store to be run from terminal. Besides those, nothing is modified outside of the Pi-store folder.
 
