@@ -8,7 +8,7 @@ function error {
 cd $HOME
 
 if [[ "$(id -u)" == 0 ]]; then
-	error "Pi-Apps is not designed to be installed as root! Please try again as a regular user."
+	error "Pi-Store is not designed to be installed as root! Please try again as a regular user."
 fi
 
 DIRECTORY="$(readlink -f "$(dirname "$0")")"
@@ -57,16 +57,16 @@ if ! command -v curl >/dev/null;then
   fi
 fi
 
-#download pi-apps if folder missing
+#download pi-store if folder missing
 if [ -z "$DIRECTORY" ] || [ "$DIRECTORY" == "$HOME" ] || [ "$DIRECTORY" == bash ];then
-  DIRECTORY="$HOME/pi-apps"
+  DIRECTORY="$HOME/pi-store"
   
   #if directory does not exist, download it
   if [ ! -d "$DIRECTORY" ];then
-    echo "Downloading Pi-Apps..."
-    output="$(git clone --depth 1 https://github.com/Botspot/pi-apps "$DIRECTORY" 2>&1)"
+    echo "Downloading Pi-Store..."
+    output="$(git clone --depth 1 https://github.com/P-EO/pi-store "$DIRECTORY" 2>&1)"
     if [ ! -d "$DIRECTORY" ];then
-      error "Pi-Apps download failed!\ngit clone output was: $output"
+      error "Pi-Store download failed!\ngit clone output was: $output"
     fi
   fi
 fi
