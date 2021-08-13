@@ -1,6 +1,6 @@
 ---
 name: App request
-about: Suggest/submit an app to be added to Pi-Apps
+about: Sugges/stubmit an app to be added to Pi-AppStore
 title: ''
 labels: App Request
 assignees: ''
