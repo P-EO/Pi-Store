@@ -78,8 +78,8 @@ if [ ! -f ~/.local/share/applications/pi-store.desktop ];then
 fi
 mkdir -p ~/.local/share/applications
 echo "[Desktop Entry]
-Name=Pi Apps
-Comment=Raspberry Pi App Store for open source projects
+Name=Pi Store
+Comment=Raspberry Pi Store for open source projects
 Exec=${DIRECTORY}/gui
 Icon=${DIRECTORY}/icons/logo.png
 Terminal=false
@@ -90,13 +90,13 @@ if [ ! -f ~/Desktop/pi-store.desktop ];then
   echo "Adding Desktop shortcut..."
 fi
 cp -f ~/.local/share/applications/pi-store.desktop ~/Desktop/pi-store.desktop
-chmod +x ~/Desktop/pi-apps.desktop
+chmod +x ~/Desktop/pi-storedesktop
 
 if [ ! -f ~/.local/share/applications/pi-store-settings.desktop ];then
   echo "Creating Settings menu button..."
 fi
 echo "[Desktop Entry]
-Name=Pi Apps Settings
+Name=Pi Store Settings
 Comment=Configure Pi-Store or create an App
 Exec=${DIRECTORY}/settings
 Icon=${DIRECTORY}/icons/logo.png
@@ -109,7 +109,7 @@ if [ ! -f ~/.config/autostart/pi-store-updater.desktop ];then
 fi
 mkdir -p ~/.config/autostart
 echo "[Desktop Entry]
-Name=Pi Apps Updater
+Name=Pi Store Updater
 Exec=${DIRECTORY}/updater onboot
 Icon=${DIRECTORY}/icons/logo.png
 Terminal=false
@@ -181,10 +181,10 @@ Mac OS Theme"
 fi
 
 #pi-apps terminal command
-if [ ! -f /usr/local/bin/pi-apps ] || ! cat /usr/local/bin/pi-apps | grep -q "${DIRECTORY}/gui";then
+if [ ! -f /usr/local/bin/pi-store ] || ! cat /usr/local/bin/pi-store | grep -q "${DIRECTORY}/gui";then
   echo "#!/bin/bash
 ${DIRECTORY}/gui"' "$@"' | sudo tee /usr/local/bin/pi-store >/dev/null
-  sudo chmod +x /usr/local/bin/pi-apps
+  sudo chmod +x /usr/local/bin/pi-store
   echo "You can now launch pi-store from a terminal, just by running 'pi-store'"
 fi
 
@@ -200,3 +200,6 @@ fi
 
 echo "Installation complete."
 
+echo "Have a look around let me know if you need anything
+           
+	   P-EO on (github.com)"
