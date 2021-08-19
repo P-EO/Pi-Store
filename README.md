@@ -41,12 +41,7 @@ To uninstall Pi-Store:
 ## To run Pi-Store
 Menu -> Accessories -> Pi Store, or run `pi-store` in a terminal. Run Pi-Store from its directory with `~/pi-Store/gui`.
 ### Useful links
-- [![Pi-Store Discord server](https://img.shields.io/discord/770629697909424159.svg?color=7289da&label=Pi-Apps%20Discord%20server&logo=discord)](https://discord.gg/RXSTvaUvuu)
-- [Send Botspot a donation](https://paypal.me/josephmarchand)
-- [View changelog](https://github.com/Botspot/pi-apps/blob/master/CHANGELOG.md)
-- [Report an error](https://github.com/Botspot/pi-apps/issues/new)
-- [Leepspvideo Pi-Store walkthrough](https://www.youtube.com/watch?v=zxyWQ3FV98I)
-- [ETA Prime's Pi-Store & Minecraft Java video](https://www.youtube.com/watch?v=oqNWJ52DLes)
+- [![Pi-Store Discord server](https://img.shields.io/discord/770629697909424159.svg?color=7289da&label=Pi-Apps%20Discord%20server&logo=discord)]
 
 ## What do others say about Pi-Store?
 > "Awesome. Thanks for doing this." - **[Novaspirit Tech](youtube.com/novaspirittech)** (large RPi YouTuber) on Discord
@@ -121,5 +116,5 @@ Embed code:
 > - It's always nice to leave a kind word about Pi-Store on forums and in comments. In addition to helping others find this useful software, you may just get added to [the hall of fame](https://github.com/P-EO/pi-store#what-do-others-say-about-pi-apps)!
 > - You can [donate](https://paypal.me/josephmarchand) if you'd like. The money goes to me (minus the Paypal fees), and helps support future open-source development. Some of the money goes to placing [bounties](https://github.com/ptitSeb/box86/issues/296) on apps that I'd like to see completed by someone else who has skills/time that I don't have.
 > - You can look through the [list of app requests](https://github.com/P-EO/pi-store/issues) and help create the scripts for them.
-> - If you see someone complaining about a broken app on Youtube, Reddit, or Facebook, please encourage them to join the [Pi-Store Discord](https://discord.gg/RXSTvaUvuu) or to [open an issue](https://github.com/P-EO/pi-store/issues/new) to get the problem solved. (I'm not on those sites very often.)
+> - If you see someone complaining about a broken app on Youtube, Reddit, or Facebook, please encourage them to join the [Pi-Store Discord] or to [open an issue](https://github.com/P-EO/pi-store/issues/new) to get the problem solved. (I'm not on those sites very often.)
 > - You could help troubleshoot/diagnose issues others are having.
